@@ -30,4 +30,7 @@ To solve the "Obedient Cat" challenge, follow these steps:
 
 Here is an example of what the flag might look like:
 
+```bash
+picoCTF{this_is_an_example_flag}
+```
 
