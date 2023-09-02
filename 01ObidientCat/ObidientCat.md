@@ -1,36 +1,21 @@
-# PicoCTF - Obedient Cat
+# Obedient Cat
+* **Category:** General Skills
+* **Author:** SYREAL
 
-![PicoCTF](https://www.picoctf.com/static/images/logo.png)
+## Description
 
-**Author:** syreal
+This file has a flag in plain sight (aka "in-the-clear").
 
-## Challenge Description
+## Solution:
 
-The "Obedient Cat" challenge is a Capture The Flag (CTF) problem in PicoCTF. The goal of this challenge is to find a flag hidden in plain sight within a file provided by the challenge. This flag is not encrypted or obfuscated in any way; it's simply there, waiting to be discovered.
-
-## Challenge File
-
-The challenge file is named [insert_filename_here]. You can download it directly from the PicoCTF platform or access it [insert_link_here] (if hosted externally).
-
-## Solution
-
-### Approach
-
-To solve the "Obedient Cat" challenge, follow these steps:
-
-1. **Download the Challenge File**: First, obtain the challenge file either from the PicoCTF platform or the provided external link.
-
-2. **Inspect the File**: Use a text editor or command-line tools to inspect the content of the file. Look for any text that might resemble the flag.
-
-3. **Search for the Flag**: Search for the flag format, which is typically in the format `picoCTF{...}`. It may be hidden anywhere in the file, so a careful examination is needed.
-
-4. **Flag Discovery**: Once you find the flag, record it and submit it on the PicoCTF platform to earn your points.
-
-### Example
-
-Here is an example of what the flag might look like:
+The challenge gives us a link to download which downloads a file named "flag" for us. After seeing that it is of a file-type unrecognized by Windows, we can take the hint from the challenge name and try to use the Unix "cat" command on it with:
 
 ```bash
-picoCTF{this_is_an_example_flag}
+cat flag
 ```
 
+## Flag:
+
+```bash
+picoCTF{s4n1ty_v3r1f13d_2aa22101}
+```
